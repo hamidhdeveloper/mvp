@@ -1,15 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "../../images/logo.png";
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  const headerStyle = {
+    color: location.pathname === '/startcreating' ? 'white' : ''
+  };
+  const logoStyle = {
+    filter: location.pathname === '/startcreating' ? 'invert(100%)' : ''
+  }
   return (
     <>
       <nav className="mycustomNavBar navbar navbar-expand bg-body-tertiary fixed-top">
         <div className="container-fluid myheader">
           <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" style={logoStyle}/>
           </a>
           <button
             className="navbar-toggler"
@@ -28,7 +37,7 @@ const Header = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/" style={headerStyle}>
                   AR
                 </a>
               </li>
@@ -38,6 +47,7 @@ const Header = () => {
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"
+                style={headerStyle}
               >
                 Menu
               </button>
@@ -66,8 +76,8 @@ const Header = () => {
           aria-labelledby="offcanvasRightLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasRightLabel">
-              MVP
+            <h5 className="offcanvas-title mycanvastitle" id="offcanvasRightLabel">
+              <Link to='/'>MVP</Link>
             </h5>
             <button
               type="button"
@@ -76,15 +86,17 @@ const Header = () => {
               aria-label="Close"
             />
           </div>
-          <div className="offcanvas-body">
+          <div className="offcanvas-body mycanvas">
             <ul className="list-group">
-              <li className="list-group-item active" aria-current="true">
-              <a href="/">Start Creating</a>
+             <Link to="/startcreating">
+              <li className="list-group-item myactive" aria-current="true">
+              Start Creating
               </li>
-              <li className="list-group-item"><a href="/">About Us</a></li>
-              <li className="list-group-item"><a href="/">Shop</a></li>
-              <li className="list-group-item"><a href="/">Login</a></li>
-              <li className="list-group-item"><a href="/">Register</a></li>
+              </Link>
+              <Link to="/aboutus"><li className="list-group-item">About Us</li></Link>
+              <a href="/"><li className="list-group-item">Shop</li></a>
+              <a href="/"><li className="list-group-item">Login</li></a>
+              <a href="/"><li className="list-group-item">Register</li></a>
             </ul>
           </div>
         </div>

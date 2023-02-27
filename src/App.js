@@ -1,16 +1,21 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import HeroSection from "./components/home/HeroSection";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Home from "./components/home/Home";
+import About from "./components/pages/aboutus/About";
+import Start from "./components/pages/startcreating/Start";
 
 
 function App() {
-  return (
+  return <BrowserRouter>
     <div className="App">
-      <Header />
-      <HeroSection />
-      <Footer />
+    <Routes>
+         
+        <Route path="/" element={ <Home /> } />
+        <Route path="startcreating" element={ <Start /> } />
+        <Route path="aboutus" element={ <About /> } />
+        {/* <Route path="signup" element={ <SignUpModel /> } /> */}
+    </Routes> 
     </div>
-  );
+    </BrowserRouter>;
 }
 
 export default App;
