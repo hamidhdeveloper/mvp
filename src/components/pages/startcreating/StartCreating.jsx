@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCarousel from "./ImageCarousel";
+// import ImageCarousel from "./ImageCarousel";
 import "./StartCreating.scss";
 
 const StartCreating = () => {
@@ -35,7 +35,7 @@ const StartCreating = () => {
       <div className="container-fulid mycarouselControls">
         <div class="row">
           <div class="col-md-12">
-            <ImageCarousel />
+            {/* <ImageCarousel /> */}
           </div>
         </div>
       </div>
