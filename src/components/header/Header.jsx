@@ -77,7 +77,7 @@ const Header = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title mycanvastitle" id="offcanvasRightLabel">
-              <Link to='/'>MVP</Link>
+              <Link to='/mvp'>MVP</Link>
             </h5>
             <button
               type="button"
