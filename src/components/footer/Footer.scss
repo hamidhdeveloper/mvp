@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f500;
+    padding: 10px 0;
+}
+
+.footer-icons {
+    margin-right: 3rem;
+}
+
+.footer-icons a i {
+    color: #463d3d;
+    font-size: 19px;
+    margin: 0px 5px;
+}
+
+.footer-copyright span {
+    color: #463d3d;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+@media (max-width: 576px) {
+    .footer-copyright span, .footer-icons {
+        margin: 0 auto;
+        display: table;
+    }
+  }
