@@ -1,0 +1,47 @@
+.mycustomNavBar {
+  background: rgba(255, 0, 0, 0) !important;
+}
+
+.myheader .container {
+  display: flex;
+}
+
+.navbar-brand img {
+  height: 24px;
+}
+
+.myNavbar {
+  justify-content: flex-end;
+}
+
+.myNavbar ul li a {
+  margin-right: 18px;
+}
+
+.myNavbar .navbar-nav {
+  margin-right: 0px !important;
+}
+
+.menubutton {
+  border: none;
+  background: none;
+  color: #463d3d;
+  text-transform: uppercase;
+}
+
+.myactive {
+  background: #463d3d;
+  color: #ffffff !important;
+}
+
+.mycanvas ul a {
+  text-decoration: none;
+  color: #463d3d;
+  font-weight: 300;
+}
+
+.mycanvastitle a {
+  text-decoration: none;
+  color: #463d3d;
+  font-weight: 500;
+}/*# sourceMappingURL=Header.css.map */

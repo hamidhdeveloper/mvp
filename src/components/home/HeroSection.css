@@ -1,0 +1,85 @@
+.heroSecction {
+  padding: 0px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev {
+  display: none;
+}
+
+.mycarousel {
+  left: 7%;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.mycarousel h6 {
+  color: #463d3d;
+  text-align: left;
+  margin: 0px 9px;
+}
+
+.mycarousel h1 {
+  color: #463d3d;
+  font-size: 10rem;
+  font-weight: bolder;
+  letter-spacing: -14px;
+  text-align: left;
+  line-height: 135px;
+}
+
+.mycarousel1 {
+  left: 26%;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.mycarousel1 h6 {
+  color: #463d3d;
+  text-align: left;
+  margin: 0px 9px;
+}
+
+.mycarousel1 h1 {
+  color: #463d3d;
+  font-size: 10rem;
+  font-weight: bolder;
+  letter-spacing: -14px;
+  text-align: left;
+  line-height: 135px;
+}
+
+.mySliderImg {
+  height: 100vh;
+}
+
+@media (min-width: 1195px) and (max-width: 2000px) {
+  .mySliderImg {
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .mycarousel h1, .mycarousel1 h1 {
+    font-size: 5rem;
+    line-height: 68px;
+    letter-spacing: -6px;
+  }
+}
+@media (max-width: 576px) {
+  .mycarousel, .mycarousel1 {
+    left: 4%;
+    top: 20%;
+  }
+}
+@media (max-width: 992px) {
+  .mycarousel1 h1 {
+    font-size: 5rem;
+    line-height: 68px;
+    letter-spacing: -6px;
+  }
+}
+@media (max-width: 992px) {
+  .mycarousel1 {
+    left: 4%;
+    top: 20%;
+  }
+}/*# sourceMappingURL=HeroSection.css.map */
