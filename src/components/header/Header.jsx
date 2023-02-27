@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "../../images/logo.png";
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  // const location = useLocation();
+  const location = useLocation();
   const headerStyle = {
-    // color: location.pathname === '/startcreating' ? 'white' : ''
+    color: location.pathname === '/startcreating' ? 'white' : ''
   };
   const logoStyle = {
-    // filter: location.pathname === '/startcreating' ? 'invert(100%)' : ''
+    filter: location.pathname === '/startcreating' ? 'invert(100%)' : ''
   }
   return (
     <>
@@ -18,7 +18,7 @@ const Header = () => {
         <div className="container-fluid myheader">
           <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="logo" style={logoStyle }/>
+            <img src={logo} alt="logo" style={logoStyle}/>
           </a>
           <button
             className="navbar-toggler"
