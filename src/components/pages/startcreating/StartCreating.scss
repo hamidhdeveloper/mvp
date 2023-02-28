@@ -176,21 +176,23 @@
 //  Medium devices (tablets) */
  @media only screen and (min-width: 768px) and (max-width: 991px) {
    .mycreatingcol h1 {
-      font-size: 4em;
+      font-size: 5em;
     letter-spacing: 0;
     margin-top: 2rem;
    }
    .mycreatingcol h2 {
-      margin-bottom: -2px;
+      font-size: 5em;
+      margin-bottom: 35px;
       margin-right: 0rem;
-      margin-top: -4.5rem;
+      margin-top: -1.5rem;
+      letter-spacing: -1px;
    }
    .mycreatingcol p {
       width: 49%;
       top: 64%;
    }
    .search {
-      width: 70%;
-   }
+      width: 67%;
+  }
    
  }
