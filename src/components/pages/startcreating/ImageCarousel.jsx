@@ -10,57 +10,65 @@ import "./ImageCarousel.scss";
 const ImageCarousel = () => {
   return (
     <>
-      <div
-        id="carouselExampleControls"
-        className="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="card-wrapper container-sm d-flex  justify-content-around">
-              <div className="card  ">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  ">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  ">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  ">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card">
-                <img src={image2} className="card-img-top" alt="..." />
-              </div>
-              <div className="card">
-                <img src={image3} className="card-img-top" alt="..." />
-              </div>
+      <div className="slider-body">
+      <div className="carasol-slider">
+        <div className="slide-track">
+            <div className="slide-all">
+              <img src={image1} alt="this is slider one" />
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card-wrapper container-sm d-flex   justify-content-around">
-              <div className="card  mycard">
-                <img src={image4} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  mycard">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  mycard">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card  mycard">
-                <img src={image1} className="card-img-top" alt="..." />
-              </div>
-              <div className="card mycard">
-                <img src={image5} className="card-img-top" alt="..." />
-              </div>
-              <div className="card mycard">
-                <img src={image6} className="card-img-top" alt="..." />
-              </div>
+            <div className="slide-all">
+              <img src={image2} alt="this is slider one" />
             </div>
-          </div>
-
+            <div className="slide-all">
+              <img src={image3} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image4} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image5} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image6} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image3} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image4} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image5} alt="this is slider one" />
+            </div>
+            {/* double the slider */}
+            <div className="slide-all">
+              <img src={image1} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image2} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image3} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image4} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image5} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image6} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image3} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image4} alt="this is slider one" />
+            </div>
+            <div className="slide-all">
+              <img src={image5} alt="this is slider one" />
+            </div>
+        </div>
         </div>
       </div>
     </>

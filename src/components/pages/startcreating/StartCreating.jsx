@@ -18,7 +18,7 @@ const StartCreating = () => {
             </p>
             <div className="container createimgcontainer">
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12 createimgcol">
                   <input
                     className="search"
                     type="text"
@@ -34,7 +34,7 @@ const StartCreating = () => {
       </div>
       <div className="container-fulid mycarouselControls">
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 myImgCarouselcol">
             <ImageCarousel />
           </div>
         </div>
