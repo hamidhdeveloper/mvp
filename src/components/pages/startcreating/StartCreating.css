@@ -1,3 +1,10 @@
+.myContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0px;
+}
+
 .mycreating {
   background: #463D3D;
   position: relative;

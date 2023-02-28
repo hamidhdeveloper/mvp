@@ -5,7 +5,8 @@ import "./StartCreating.scss";
 const StartCreating = () => {
   return (
     <>
-      <div className="container-fluid mycreating">
+      <div className="container-fluid myContainer">
+        <div className="mycreating">
         <div className="row">
           <div className="col-md-12 mycreatingcol">
             <h1 className="text-center text-sm-1">
@@ -31,14 +32,18 @@ const StartCreating = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container-fulid mycarouselControls">
+        </div>
+        <div className="container-fulid mycarouselControls">
         <div className="row">
           <div className="col-md-12 myImgCarouselcol">
             <ImageCarousel />
           </div>
         </div>
       </div>
+
+
+      </div>
+      
     </>
   );
 };

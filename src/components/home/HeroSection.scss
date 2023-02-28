@@ -1,5 +1,11 @@
 .heroSecction{
     padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+#myCarousel{
+  width: 100%;
+
 }
 .carousel-control-next-icon,.carousel-control-prev {
     display: none;
