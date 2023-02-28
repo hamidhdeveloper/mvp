@@ -144,26 +144,27 @@
 // small devices
 @media only screen and (min-width: 321px) and (max-width: 767px) {
    .mycreatingcol h1 {
-      color: red;
-      font-size: 5em;
-    letter-spacing: 0rem;
+      font-size: 4em;
+    letter-spacing: 0;
     margin-top: 2rem;
    }
    .mycreatingcol h2 {
-      font-size: 5em;
+      font-size: 4em;
     letter-spacing: -3px;
-    margin-top: -2rem;
+    margin-bottom: 4rem;
     margin-left: 19rem;
-    margin-bottom: 5rem;
+    margin-top: -2rem;
    }
    .mycreatingcol p {
-    width: 75%;
-    top: 56%;
-    text-align: center;
-    left: 10%;
+      left: 10%;
+      text-align: center;
+      top: 56%;
+      width: 75%;
    }
    .search {
-      width: 23%;
+    width: 22%;
+    font-size: 12px;
+    padding: 0px 12px;
    }
    .myImgCarouselcol{
       display: flex;
@@ -174,7 +175,22 @@
  }
 //  Medium devices (tablets) */
  @media only screen and (min-width: 768px) and (max-width: 991px) {
-   .mycreatingcol h2 {
-     color: rgb(6, 227, 21);
+   .mycreatingcol h1 {
+      font-size: 4em;
+    letter-spacing: 0;
+    margin-top: 2rem;
    }
+   .mycreatingcol h2 {
+      margin-bottom: -2px;
+      margin-right: 0rem;
+      margin-top: -4.5rem;
+   }
+   .mycreatingcol p {
+      width: 49%;
+      top: 64%;
+   }
+   .search {
+      width: 70%;
+   }
+   
  }
