@@ -1,14 +1,16 @@
-.ordermaincontainer{
+.ordermaincontainer {
     padding: 0px;
     overflow: hidden;
 }
-.orderdetail{
+
+.orderdetail {
     background: #463D3D;
     display: flex;
     justify-content: center;
     padding-bottom: 22px;
 }
-.orderdetail-left{
+
+.orderdetail-left {
     flex-direction: column;
     height: 350px;
     display: flex;
@@ -16,80 +18,95 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
-.orderdetail-left h1{
+
+.orderdetail-left h1 {
     margin-right: 42px;
     color: #fff;
     font-size: 1.5em;
 }
-.orderdetail-right{
+
+.orderdetail-right {
     display: flex;
     // background: rgba(10, 144, 117, 0.6392156863);
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
 }
-.orderdetail-right p{
+
+.orderdetail-right p {
     color: #fff;
 }
-.orderimg{
-  background: #DEDAD5;
-  padding: 20px;
+
+.orderimg {
+    background: #DEDAD5;
+    padding: 20px;
 }
-.orderimg img{
+
+.orderimg img {
     height: 152px;
 }
-.order-bottom{
+
+.order-bottom {
     background: #F5F5F5;
-//   background:yellow;
+    //   background:yellow;
 }
-.order-bottom-left{
-   height: 300px;
-   background: #F5F5F5;
+
+.order-bottom-left {
+    height: 300px;
+    background: #F5F5F5;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     padding-top: 38px;
     padding-bottom: 38px;
-    .table1{
+
+    .table1 {
         width: 54%;
-    // border: 1px solid;
-     tr td input{
-        width: 42%;
-     }
-     tr td select{
-        width: 100%;
-     }
+
+        // border: 1px solid;
+        tr td input {
+            width: 42%;
+        }
+
+        tr td select {
+            width: 100%;
+        }
     }
-    .table2{
+
+    .table2 {
         width: 74%;
         border: 1px solid #00000024;
         border-collapse: collapse;
         text-align: center;
-        tr:first-child{
-          background: #E8EBEC;
+
+        tr:first-child {
+            background: #E8EBEC;
         }
-        tr td{
+
+        tr td {
             padding: 6px;
             border: 1px solid #00000024;
         }
     }
 }
 
-.order-bottom-right{
+.order-bottom-right {
     background: #F5F5F5;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom:68px;
-    button{
-    border: 1px solid blue;
-    color: blue;
-    padding: 8px 80px;
-    &:hover{
-        border: 1px solid rgb(75, 59, 59);
-        color: rgb(75, 59, 59);
-    }
+    padding-bottom: 68px;
+
+    button {
+        border: 1px solid blue;
+        color: blue;
+        padding: 8px 80px;
+
+        &:hover {
+            border: 1px solid rgb(75, 59, 59);
+            color: rgb(75, 59, 59);
+        }
     }
 }

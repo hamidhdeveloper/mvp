@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .retry-input-container {
@@ -128,12 +128,13 @@
 // responsive
 // extra small
 @media only screen and (max-width: 320px) {
-   .menubutton {
-     color: white;
-   }
-   .retry-left h1{
-    font-size: 4em;
-    margin-top: 8rem;
-    letter-spacing: -2px;
-   }
- }
+    .menubutton {
+        color: white;
+    }
+
+    .retry-left h1 {
+        font-size: 4em;
+        margin-top: 8rem;
+        letter-spacing: -2px;
+    }
+}
