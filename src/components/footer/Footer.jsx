@@ -1,11 +1,16 @@
 import React from "react";
 import "./Footer.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+  const footerStyle = {
+    background: location.pathname === '/retry' ? 'white' : location.pathname === '/canvasprinting' ? 'white' : '',
+  };
   return (
     <>
-      <footer className="footer fixed-bottom">
+      <footer className="footer fixed-bottom" style={footerStyle}>
         <div className="container-fulid">
           <div className="row">
             <div className="col-md-7">

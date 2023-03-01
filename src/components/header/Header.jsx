@@ -7,10 +7,11 @@ import { useLocation } from 'react-router-dom';
 const Header = () => {
   const location = useLocation();
   const headerStyle = {
-    color: location.pathname === '/startcreating' ? 'white' : ''
+    color: location.pathname === '/startcreating' ? 'white' : location.pathname === '/order' ? 'white' : '',
+    
   };
   const logoStyle = {
-    filter: location.pathname === '/startcreating' ? 'invert(100%)' : ''
+    filter: location.pathname === '/startcreating' ? 'invert(100%)' : location.pathname === '/retry' ? 'invert(100%)' : location.pathname === '/order' ? 'invert(100%)' : ''
   }
   return (
     <>
@@ -79,14 +80,14 @@ const Header = () => {
           <div className="offcanvas-body mycanvas">
             <ul className="list-group">
              <Link to="/startcreating">
-              <li className="list-group-item myactive" aria-current="true">
+              <li className={`list-group-item ${location.pathname === '/startcreating' ? 'myactive' : ''}`} aria-current="true">
               Start Creating
               </li>
               </Link>
-              <Link to="/aboutus"><li className="list-group-item">About Us</li></Link>
-              <a href="/mvp"><li className="list-group-item">Shop</li></a>
-              <a href="/mvp"><li className="list-group-item">Login</li></a>
-              <a href="/mvp"><li className="list-group-item">Register</li></a>
+              <Link to="/retry"><li className={`list-group-item ${location.pathname === '/retry' ? 'myactive' : ''}`}>Retry</li></Link>
+              <Link to="/goodjob"><li className={`list-group-item ${location.pathname === '/goodjob' ? 'myactive' : ''}`}>Good Job</li></Link>
+              <Link to="/canvasprinting"><li className={`list-group-item ${location.pathname === '/canvasprinting' ? 'myactive' : ''}`}>Canvas Printing</li></Link>
+              <Link to="/order"><li className={`list-group-item ${location.pathname === '/order' ? 'myactive' : ''}`}>Order Detail</li></Link>
             </ul>
           </div>
         </div>

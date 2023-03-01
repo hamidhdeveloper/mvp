@@ -1,0 +1,43 @@
+.goodjobmaincontainer {
+    padding: 0px;
+    overflow: hidden;
+    background-image: url('../../../images/goodjob-bg.png');
+    background-size: cover;
+}
+
+.goodjobsection {
+    display: flex;
+    justify-content: center;
+}
+
+.goodjobsection-left {
+    display: flex;
+    height: 100vh;
+    // background: #463D3D;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.goodjobsection-right {
+    height: 100vh vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 60px;
+
+}
+
+.goodjobsection-right h1 {
+    font-size: 6em;
+    text-align: right;
+    font-weight: 900;
+    color: #463D3D;
+    line-height: 76px;
+    letter-spacing: -6px;
+}
+
+.goodjobsection-right p {
+    text-align: right;
+}

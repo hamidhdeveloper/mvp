@@ -1,0 +1,15 @@
+.retry-container {
+  display: flex;
+  overflow: scroll;
+  padding: 0px;
+}
+
+.retry-left {
+  height: 200px;
+  background: #463D3D;
+}
+
+.retry-blue {
+  height: 200px;
+  background: #463D3D;
+}/*# sourceMappingURL=Retry.css.map */

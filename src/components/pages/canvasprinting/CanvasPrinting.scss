@@ -1,0 +1,83 @@
+.canvasprintingcontainer {
+    padding: 0px;
+    overflow: hidden;
+    background: #F5F5F5;
+}
+
+.canvasprinting {
+    display: flex;
+    justify-content: center;
+}
+
+.canvasprinting-left {
+    display: flex;
+    height: 100vh;
+    background-image: url('../../../images/canvas-printing.png');
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+
+.canvasprinting-left h1 {
+    font-size: 6em;
+    text-align: right;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 85px;
+    letter-spacing: -6px;
+    margin-bottom: 18px;
+}
+
+.canvasprinting-left p {
+    text-align: right;
+    color: #ffffff;
+}
+
+.canvasprinting-right {
+    height: 100vh vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 129px;
+}
+
+.canvasprinting-right h1 {
+    font-size: 1.4em;
+}
+
+.canvasprinting-right p {
+    margin-bottom: 0.5rem;
+}
+
+.sizebox {
+    // background-color: red;
+    width: 52%;
+    align-self: center;
+    margin-top:18px;
+
+    .size-top {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .size-buttom {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        select {
+            width: 62%;
+            border: 1px solid #1c1cff26;
+            padding: 5px;
+        }
+
+        input {
+            margin-left: 24px;
+            margin-right: 6px;
+        }
+    }
+}
