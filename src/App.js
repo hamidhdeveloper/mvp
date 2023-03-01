@@ -19,6 +19,7 @@ function App() {
         <Route path="goodjob" element={ <GoodJobP /> } />
         <Route path="canvasprinting" element={ <Canvas /> } />
         <Route path="order" element={ <Order /> } />
+        
     </Routes> 
     </div>
     </BrowserRouter>;

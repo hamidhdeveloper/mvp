@@ -1,6 +1,7 @@
 import React from "react";
 import "./CanvasPrinting.scss";
 import leftarrow from "../../../images/leftarrow.png";
+import { Link } from "react-router-dom";
 const CanvasPrinting = () => {
   return (
     <>
@@ -40,8 +41,9 @@ const CanvasPrinting = () => {
               className="reimg-button-container"
               style={{ marginTop: "100px" }}
             >
-              <a href="/mvp">We deliver</a>
+              <Link to="/order">We deliver
               <img src={leftarrow} alt="retry arrow" />
+              </Link>
             </div>
           </div>
         </div>

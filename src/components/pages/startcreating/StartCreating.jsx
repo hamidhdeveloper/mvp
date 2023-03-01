@@ -1,6 +1,7 @@
 import React from "react";
 import ImageCarousel from "./ImageCarousel";
 import "./StartCreating.scss";
+import { Link } from "react-router-dom";
 
 const StartCreating = () => {
   return (
@@ -26,7 +27,9 @@ const StartCreating = () => {
                     placeholder="flying car in space..."
                     name="search"
                   />
+                  <Link to='/canvasprinting'>
                   <button className="createimg">Create Image</button>
+                  </Link>
                 </div>
               </div>
             </div>

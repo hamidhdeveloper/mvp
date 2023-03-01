@@ -1,6 +1,7 @@
 import React from "react";
 import "./OrderDetail.scss";
 import orderimg from "../../../images/carimg.png";
+import { Link } from "react-router-dom";
 
 const OrderDetail = () => {
   return (
@@ -68,7 +69,9 @@ const OrderDetail = () => {
                     <div className='row2'><input type='checkbox' /> Custom</div> */}
           </div>
           <div className="col-md-6 order-bottom-right">
+            <Link to='/goodjob'>
             <button>Add to cart</button>
+            </Link>
           </div>
         </div>
       </div>

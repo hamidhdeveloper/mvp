@@ -6,6 +6,7 @@ import retry1 from "../../../images/ret1img.png";
 import retry2 from "../../../images/ret2img.png";
 import retry3 from "../../../images/ret3img.png";
 import retry4 from "../../../images/ret4img.png";
+import { Link } from "react-router-dom";
 
 const Retry = () => {
   return (
@@ -25,7 +26,9 @@ const Retry = () => {
                 placeholder="flying car in space..."
                 name="search"
               />
+              <Link to='/canvasprinting'>
               <button className="retrycreate">Create Image</button>
+              </Link>
             </div>
           </div>
           <div className="col-md-5 retry-right">
@@ -41,8 +44,10 @@ const Retry = () => {
               </div>
             </div>
             <div className="reimg-button-container">
-              <a href="/mvp">Better with frame</a>
+              
+              <Link to="/order">Better with frame
               <img src={retryArrow} alt="retry arrow" />
+              </Link>
             </div>
           </div>
         </div>
