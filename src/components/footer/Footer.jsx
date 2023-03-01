@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { useLocation } from 'react-router-dom';
+import logo from "../../images/logo.png";
 
 const Footer = () => {
   const location = useLocation();
@@ -14,6 +15,9 @@ const Footer = () => {
         <div className="container-fulid">
           <div className="row">
             <div className="col-md-7">
+            {location.pathname !== '/mvp' &&  (
+              <img src={logo} alt="logo" className="footerlogo"/>
+              )}
               <div className="footer-copyright text-lg-end text-md-center text-sm-center">
                 <span>2023 © MyBrand. All rights reserved.</span>
               </div>

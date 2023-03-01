@@ -20,7 +20,7 @@
 }
 
 .orderdetail-left h1 {
-    margin-right: 42px;
+    margin-right: 51px;
     color: #fff;
     font-size: 1.5em;
 }
@@ -29,12 +29,13 @@
     display: flex;
     // background: rgba(10, 144, 117, 0.6392156863);
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
 }
 
 .orderdetail-right p {
     color: #fff;
+    margin-bottom: 0px;
 }
 
 .orderimg {
@@ -43,7 +44,8 @@
 }
 
 .orderimg img {
-    height: 152px;
+    height: 197px;
+    width: 160px;
 }
 
 .order-bottom {
@@ -62,6 +64,7 @@
     padding-bottom: 38px;
 
     .table1 {
+        margin-bottom: 10px;
         width: 54%;
 
         // border: 1px solid;
@@ -74,7 +77,15 @@
         }
     }
 
+    .custombox {
+        width: 15% !important;
+        margin-right: 5px;
+        margin-top: 6px;
+       
+    }
+
     .table2 {
+        margin-left: 148px;
         width: 74%;
         border: 1px solid #00000024;
         border-collapse: collapse;

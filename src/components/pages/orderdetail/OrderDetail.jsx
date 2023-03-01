@@ -43,7 +43,7 @@ const OrderDetail = () => {
               <tr>
                 <td></td>{" "}
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox"  className="custombox"/>
                   Custom
                 </td>
               </tr>
