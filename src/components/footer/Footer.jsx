@@ -5,7 +5,9 @@ import { useLocation } from 'react-router-dom';
 import logo from "../../images/logo.png";
 
 const Footer = () => {
+  
   const location = useLocation();
+  console.log(location.pathname);
   const footerStyle = {
     background: location.pathname === '/retry' ? 'white' : location.pathname === '/canvasprinting' ? 'white' : '',
   };
