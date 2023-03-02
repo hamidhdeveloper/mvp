@@ -17,6 +17,7 @@ const CanvasPrinting = () => {
           </div>
           <div className="col-md-6 canvasprinting-right">
             <h1>Canvas with wooden frame</h1>
+            <p>Printing: Inkjet</p>
             <p>Size: Various</p>
             <p>Sides: 1 sided only</p>
             <p>Colors:Full (CMYK)</p>
@@ -26,7 +27,7 @@ const CanvasPrinting = () => {
             <div className="sizebox">
               <div className="size-top">
                 <span style={{ fontWeight: "500" }}>SIZE</span>{" "}
-                <span style={{ fontWeight: "500" }}>SIDE</span>
+                <span style={{ fontWeight: "500",marginRight: '69px' }}>SIDE</span>
               </div>
               <div className="size-buttom">
                 <select style={{ with: "62%" }}>

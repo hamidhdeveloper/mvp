@@ -9,7 +9,7 @@ const OrderDetail = () => {
       <div className="container-fulid ordermaincontainer">
         <div className="row orderdetail">
           <div className="col-md-3 orderdetail-left">
-            <h1>Order Detail:</h1>
+            <h1>ORDER DETAIL:</h1>
             <div className="orderimg">
               <img src={orderimg} alt="myorder" />
             </div>

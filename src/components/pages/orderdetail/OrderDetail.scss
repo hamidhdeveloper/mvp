@@ -20,7 +20,7 @@
 }
 
 .orderdetail-left h1 {
-    margin-right: 51px;
+    margin-right: 34px;
     color: #fff;
     font-size: 1.5em;
 }
@@ -69,10 +69,12 @@
 
         // border: 1px solid;
         tr td input {
+            padding-left: 7px;
             width: 42%;
         }
 
         tr td select {
+            padding-left: 7px;
             width: 100%;
         }
     }
