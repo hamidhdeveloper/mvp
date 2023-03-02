@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="container-fulid">
           <div className="row">
             <div className="col-md-7">
-            {location.pathname !== '/mvp' &&  (
+            {location.pathname !== '/mvp' && location.pathname !== '/mvp/' &&  (
               <img src={logo} alt="logo" className="footerlogo"/>
               )}
               <div className="footer-copyright text-lg-end text-md-center text-sm-center">

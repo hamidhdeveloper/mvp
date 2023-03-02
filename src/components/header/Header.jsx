@@ -42,7 +42,7 @@ const Header = () => {
                   AR
                 </a>
               </li>
-              {location.pathname !== '/mvp' &&  (
+              {location.pathname !== '/mvp' && location.pathname !== '/mvp/' &&  (
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/mvp" style={headerStyle}>
                   How its works
