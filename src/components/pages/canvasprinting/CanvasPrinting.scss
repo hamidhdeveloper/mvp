@@ -18,6 +18,8 @@
     justify-content: flex-end;
     padding-right: 70px;
     padding-bottom: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .canvasprinting-left h1 {
@@ -81,3 +83,127 @@
         }
     }
 }
+
+// extra small
+@media only screen and (min-width: 280px) and (max-width: 319px) {
+    .canvasprinting-left h1 {
+        font-size: 3em;
+        line-height: 41px;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+    }
+
+    .canvasprinting-right {
+        padding-right: 29px;
+        padding-top: 12px;
+    }
+
+    .canvasprinting-right h1 {
+        font-size: 1em;
+    }
+
+    .sizebox {
+        width: 69%;
+    }
+
+    .size-top .side {
+        margin-right: 53px !important;
+
+    }
+
+    .size-buttom span {
+        font-size: 13px;
+        width: 61%;
+    }
+}
+
+// small devices
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .canvasprinting-left h1 {
+        font-size: 3em;
+        line-height: 41px;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+    }
+    .canvasprinting-right {
+        padding-right: 29px;
+        padding-top: 12px;
+    }
+    .canvasprinting-right h1 {
+        font-size: 1em;
+    }
+    .sizebox {
+        width: 69%;
+    }
+    .size-top .side{
+        margin-right: 67px !important;
+        
+    }
+    .size-buttom span{
+        font-size: 13px;
+        width: 61%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .canvasprinting-left h1 {
+        font-size: 3em;
+        line-height: 41px;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+    }
+    .canvasprinting-right {
+        padding-right: 29px;
+        padding-top: 12px;
+    }
+    .canvasprinting-right h1 {
+        font-size: 1em;
+    }
+    .sizebox {
+        width: 69%;
+    }
+    .size-top .side{
+        margin-right: 83px !important;
+        
+    }
+    .size-buttom span{
+        font-size: 13px;
+        width: 61%;
+    }
+}
+/* Large devices (laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .canvasprinting-left h1 {
+        font-size: 3em;
+        line-height: 41px;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+    }
+    .canvasprinting-right {
+        padding-right: 29px;
+        padding-top: 12px;
+    }
+    .canvasprinting-right h1 {
+        font-size: 1em;
+    }
+    .sizebox {
+        width: 69%;
+    }
+    .size-top .side{
+        margin-right: 123px !important;
+        
+    }
+    .size-buttom span{
+        font-size: 13px;
+        width: 61%;
+    }
+
+}
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+    .canvasprinting-right {
+ 
+       padding-right: 190px;
+    }
+ }

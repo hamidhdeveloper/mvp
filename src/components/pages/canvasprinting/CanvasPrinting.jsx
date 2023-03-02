@@ -22,12 +22,12 @@ const CanvasPrinting = () => {
             <p>Sides: 1 sided only</p>
             <p>Colors:Full (CMYK)</p>
             <p>Material: Cotton Canvas</p>
-            <p>Minimum Order: 1</p>
+            <p>Minimum Order: 1</p> 
             <p>Finishing: Wood frame</p>
             <div className="sizebox">
               <div className="size-top">
                 <span style={{ fontWeight: "500" }}>SIZE</span>{" "}
-                <span style={{ fontWeight: "500",marginRight: '69px' }}>SIDE</span>
+                <span style={{ fontWeight: "500",marginRight: '69px' }} className='side'>SIDE</span>
               </div>
               <div className="size-buttom">
                 <select style={{ with: "62%" }}>
@@ -35,7 +35,7 @@ const CanvasPrinting = () => {
                   <option>Legal</option>
                 </select>{" "}
                 <input type="radio" />
-                One sided
+                <span>One sided</span>
               </div>
             </div>
             <div

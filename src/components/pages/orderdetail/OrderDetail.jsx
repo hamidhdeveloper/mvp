@@ -8,7 +8,7 @@ const OrderDetail = () => {
     <>
       <div className="container-fulid ordermaincontainer">
         <div className="row orderdetail">
-          <div className="col-md-3 orderdetail-left">
+          <div className="col-md-3  orderdetail-left">
             <h1>ORDER DETAIL:</h1>
             <div className="orderimg">
               <img src={orderimg} alt="myorder" />
@@ -44,7 +44,7 @@ const OrderDetail = () => {
                 <td></td>{" "}
                 <td>
                   <input type="checkbox"  className="custombox"/>
-                  Custom
+                  <span className="custom">Custom</span>
                 </td>
               </tr>
             </table>
