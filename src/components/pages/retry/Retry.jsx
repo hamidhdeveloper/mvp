@@ -46,7 +46,7 @@ const Retry = () => {
             <div className="reimg-button-container">
               
               <Link to="/order">Better with frame
-              <img src={retryArrow} alt="retry arrow" />
+              <img src={retryArrow} alt="retry arrow" className="img-fluid" />
               </Link>
             </div>
           </div>

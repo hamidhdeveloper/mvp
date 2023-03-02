@@ -126,15 +126,162 @@
 }
 
 // responsive
-// extra small
-@media only screen and (max-width: 320px) {
+// extra small devices
+@media only screen and (min-width: 280px) and (max-width: 319px) {
     .menubutton {
         color: white;
     }
-
     .retry-left h1 {
-        font-size: 4em;
-        margin-top: 8rem;
+            font-size: 4em;
+            margin-top: 1rem;
         letter-spacing: -2px;
     }
+    .retry-left p {
+        margin-top: -21px;
+        margin-right: 95px;
+        text-align: right;
+    }
+    .retryinput {
+        padding: 10px 5px 10px 5px;
+    }
+    .retrycreate{
+        padding: 0px 3px;
+    }
+    .retryinput{
+        width: 42%;
+    }
+    .reimgcontainer {
+        height: 271px;
+    }
+    .rety-right-top img {
+        height: 177px;
+    padding: 6px;
+    }
+    .reimgcontainer {
+        height: 219px;
+    }
+    .rety-right-buttom img {
+        height: 35px;
+    }
+    .reimg-button-container a {
+        font-size: 15px;
+    }
+}
+
+// small devices
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .menubutton {
+        color: white;
+    }
+    .retry-left h1 {
+            font-size: 4em;
+            margin-top: 1rem;
+        letter-spacing: -2px;
+    }
+    .retry-left p {
+        margin-top: -21px;
+        margin-right: 95px;
+        text-align: right;
+    }
+    .retryinput {
+        padding: 10px 5px 10px 5px;
+    }
+    .retrycreate{
+        padding: 0px 3px;
+    }
+    .retryinput{
+        width: 50%;
+    }
+    .reimgcontainer {
+        height: 247px !important;
+    }
+    .rety-right-top img {
+        height: 199px;
+    padding: 6px;
+    }
+    .reimgcontainer {
+        height: 219px;
+    }
+    .rety-right-buttom img {
+        height: 40px;
+    }
+    .reimg-button-container a {
+        font-size: 15px;
+    }
+}
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .retry-left h1 {
+            font-size: 4em;
+            margin-top: 1rem;
+        letter-spacing: -2px;
+    }
+    .retry-left p {
+        margin-top: -21px;
+        margin-right: 95px;
+        text-align: right;
+    }
+    .retryinput {
+        padding: 10px 5px 10px 5px;
+    }
+    .retrycreate{
+        padding: 0px 3px;
+    }
+    .retryinput{
+        width: 50%;
+    }
+    .reimgcontainer {
+        height: 247px !important;
+    }
+    .rety-right-top img {
+        height: 199px;
+    padding: 6px;
+    }
+    .reimgcontainer {
+        height: 219px;
+    }
+    .rety-right-buttom img {
+        height: 40px;
+    }
+    .reimg-button-container a {
+        font-size: 15px;
+    }
+}
+/* Large devices (laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .retry-left h1 {
+        font-size: 4em;
+        margin-top: 1rem;
+    letter-spacing: -2px;
+}
+.retry-left p {
+    margin-top: -21px;
+    margin-right: 95px;
+    text-align: right;
+}
+.retryinput {
+    padding: 10px 5px 10px 5px;
+}
+.retrycreate{
+    padding: 0px 3px;
+}
+.retryinput{
+    width: 72%;
+}
+.reimgcontainer {
+    height: 292px !important;
+}
+.rety-right-top img {
+    height: 254px;
+padding: 6px;
+}
+.reimgcontainer {
+    height: 219px;
+}
+.rety-right-buttom img {
+    height: 54px;
+}
+.reimg-button-container a {
+    font-size: 15px;
+}
 }

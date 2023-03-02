@@ -50,41 +50,114 @@
 .mySliderImg{
     height: 100vh;
 }
-// @media (min-width: 1195px) and (max-width: 2000px)  {
-//     .mySliderImg {
-//       height: auto;
-//     }
-//   }
 
-// small devices
-@media (max-width: 576px) {
-    .mycarousel h1, .mycarousel1 h1 {
-        font-size: 5rem;
-        line-height: 68px;
-        letter-spacing: -6px;
-    }
-  }
 
-  @media (max-width: 576px) {
-    .mycarousel,.mycarousel1 {
-        left: 4%;
-        top: 20%;
-  }
+
+
+// extra small
+@media only screen and (min-width: 280px) and  (max-width: 319px) {
+  .mycarousel1 {
+    left: 7%;
+    top: 21%;
 }
-
-// medium devices
-@media (max-width: 992px) {
     .mycarousel1 h1 {
-        font-size: 4rem;
-        line-height: 68px;
-        letter-spacing: -6px;
-    }
+      margin-left: 9px;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      line-height: 28px;
+  }
+  .mycarousel {
+    left: 7%;
+    top: 50%;
+}
+  .mycarousel h1{
+    margin-left: 9px;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      line-height: 28px;
+  }
+ }
+// small devices
+ @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .mycarousel1 {
+    left: 6%;
+    top: 26%;
+ }
+ 
+    .mycarousel1 h1 {
+      margin-left: 9px;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      line-height: 28px;
+  }
+  .mycarousel {
+    left: 7%;
+    top: 50%;
+}
+  .mycarousel h1{
+    margin-left: 9px;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      line-height: 28px;
+  }
+ }
+/* Medium devices (tablets) */
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mycarousel1 {
+    left: 6%;
+    top: 26%;
+ }
+ 
+ .mycarousel1 h1 {
+  margin-left: 5px;
+  font-size: 5rem;
+  letter-spacing: -6px;
+  line-height: 66px;
+}
+  .mycarousel {
+    left: 7%;
+    top: 50%;
+}
+.mycarousel1 h6 {
+  font-size: 1.6em;
+}
+.mycarousel h6 {
+  font-size: 1.6em;
+}
+  .mycarousel h1{
+    margin-left: 5px;
+  font-size: 5rem;
+  letter-spacing: -6px;
+  line-height: 66px;
   }
 
-  @media (max-width: 992px) {
-    .mycarousel1 {
-        left: 4%;
-        top: 20%;
+ }
+/* Large devices (laptops) */
+ @media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .mycarousel1 h1 {
+    font-size: 7rem;
+    letter-spacing: -10px;
+    line-height: 89px;
   }
+  .mycarousel h1 {
+    font-size: 7rem;
+    letter-spacing: -10px;
+    line-height: 89px;
+  }
+  .mycarousel {
+    left: 3%;
+  }
+   
+ }
+/* Extra large devices (large desktops) */
+ @media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  .mycarousel h1 {
+    font-size: 9rem;
+    letter-spacing: -12px;
+    line-height: 106px;
 }
+.mycarousel {
+  left: 9%;
+}
+  }
 

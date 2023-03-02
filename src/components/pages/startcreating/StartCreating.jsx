@@ -10,10 +10,10 @@ const StartCreating = () => {
         <div className="mycreating">
         <div className="row">
           <div className="col-md-12 mycreatingcol">
-            <h1 className="text-center text-sm-1">
+            <h1 className="text-center fs-sm-1">
               St<span style={{ color: "#FEC30E" }}>art</span>
             </h1>
-            <h2 className="text-center text-sm-1">Creating?</h2>
+            <h2 className="text-center fs-sm-1">Creating?</h2>
             <p>
               Write whatever you want and we will make it real. This is our
               promise of endless possibilities.

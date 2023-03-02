@@ -1,76 +1,86 @@
-.myContainer{
+.myContainer {
    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 0px;
-    justify-content: center;
+   flex-direction: column;
+   overflow: hidden;
+   padding: 0px;
+   justify-content: center;
 }
-.mycreating{
-    background: #463D3D;
-    position: relative;
-    display: flex;
-    justify-content: center;
+
+.mycreating {
+   background: #463D3D;
+   position: relative;
+   display: flex;
+   justify-content: center;
    //  display: none;
-    // height: 300px;
+   // height: 300px;
 }
-.mycreatingcol{
-    display: flex;
-    flex-direction: column;
+
+.mycreatingcol {
+   display: flex;
+   flex-direction: column;
 }
-.mycreatingcol h1{
+
+.mycreatingcol h1 {
    font-weight: bolder;
    color: #fff;
    font-size: 10em;
    margin-top: 20px;
    letter-spacing: -14px;
 }
-.mycreatingcol h2{
-    font-weight: bolder;
-    color: #fff;
-    font-size: 10em;
-    margin-top: -4.5rem;
-    margin-right: 19rem;
-    letter-spacing: -14px;
-    margin-bottom: -2px;
-    
- }
- .mycreating p{
-    color: #fff;
-    width: 28%;
-    text-align: right;
-    position: absolute;
-    top: 70%;
-    left: 24%;
- }
- .search{
-    padding: 10px 130px 10px 20px;
-    border: none;
-    height: 50px;
-    width: 80%;
-    border-radius: 5px 0px 0px 5px;
- }
- .createimg{
-    background: #1171d8;
-    background: linear-gradient(47deg, #1171d8, #3cc8eb);
-    color: #fff;
-    z-index: 2;
-    border: none;
-    height: 50px;
-    padding: 0px 25px;
-    inset: 0px 0px 0px auto;
-    border-radius: 0px 5px 5px 0px;
- }
- .createimgcontainer{
-    margin-top: 30px;
-    margin-bottom: 15px;
- }
- .mycarouselControls{
-    overflow: hidden;
-  }
-  .createimgcol{
+
+.mycreatingcol h2 {
+   font-weight: bolder;
+   color: #fff;
+   font-size: 10em;
+   margin-top: -4.5rem;
+   margin-right: 19rem;
+   letter-spacing: -14px;
+   margin-bottom: -2px;
+
+}
+
+.mycreating p {
+   color: #fff;
+   width: 28%;
+   text-align: right;
+   position: absolute;
+   top: 70%;
+   left: 24%;
+}
+
+.search {
+   padding: 10px 130px 10px 20px;
+   border: none;
+   height: 50px;
+   width: 80%;
+   border-radius: 5px 0px 0px 5px;
+}
+
+.createimg {
+   background: #1171d8;
+   background: linear-gradient(47deg, #1171d8, #3cc8eb);
+   color: #fff;
+   z-index: 2;
+   border: none;
+   height: 50px;
+   padding: 0px 25px;
+   inset: 0px 0px 0px auto;
+   border-radius: 0px 5px 5px 0px;
+}
+
+.createimgcontainer {
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+
+.mycarouselControls {
+   overflow: hidden;
+}
+
+.createimgcol {
    display: flex;
    justify-content: center;
-  }
+}
 
 // testing
 // extra small
@@ -107,93 +117,188 @@
 
 //  extra small devices
 
-
-@media only screen and (max-width: 320px) {
+// extra small
+@media only screen and (min-width: 280px) and (max-width: 319px) {
    .mycreatingcol h1 {
       font-size: 3em;
       letter-spacing: 0;
-      margin-top: 2rem;
+      margin-top: 3rem;
       margin-bottom: 1rem;
    }
+
    .mycreatingcol h2 {
       font-size: 3em;
-    letter-spacing: -3px;
-    margin-top: -2rem;
-    margin-left: 19rem;
-    margin-bottom: 5rem;
+      letter-spacing: -3px;
+      margin-top: -2rem;
+      margin-left: 19rem;
+      margin-bottom: 5rem;
    }
+
    .mycreatingcol p {
       left: 9%;
       top: 45%;
       text-align: center;
       width: 85%;
    }
+
+   .search {
+      width: 14%;
+      padding: 8px 11px 8px 11px;
+   }
+
+   .createimg {
+      padding: 0px 8px;
+   }
+
+   .slide-all {
+      height: 200px;
+      width: 177px;
+   }
+
+   .slide-all img {
+      width: 78%;
+   }
+
+}
+
+// small devices
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   .mycreatingcol h1 {
+      font-size: 3em;
+      letter-spacing: 0;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+   }
+
+   .mycreatingcol h2 {
+      font-size: 3em;
+      letter-spacing: -3px;
+      margin-top: -2rem;
+      margin-left: 19rem;
+      margin-bottom: 5rem;
+   }
+
+   .mycreatingcol p {
+      left: 9%;
+      top: 45%;
+      text-align: center;
+      width: 85%;
+   }
+
    .search {
       width: 18%;
-    padding: 0px 7px;
-    font-size: 11px;
+      padding: 0px 7px;
+      font-size: 11px;
    }
-   .myImgCarouselcol{
+
+   .myImgCarouselcol {
       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-top: 1rem;
-     }
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+   }
+
+   .slide-all img {
+      width: 60%;
+   }
 }
 
 
-// small devices
-@media only screen and (min-width: 321px) and (max-width: 767px) {
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
    .mycreatingcol h1 {
       font-size: 4em;
-    letter-spacing: 0;
-    margin-top: 2rem;
+      letter-spacing: 0;
+      margin-top: 2rem;
    }
+
    .mycreatingcol h2 {
       font-size: 4em;
-    letter-spacing: -3px;
-    margin-bottom: 4rem;
-    margin-left: 19rem;
-    margin-top: -2rem;
+      letter-spacing: -3px;
+      margin-bottom: 4rem;
+      margin-left: 19rem;
+      margin-top: -2rem;
    }
+
    .mycreatingcol p {
       left: 10%;
       text-align: center;
       top: 56%;
       width: 75%;
    }
+
    .search {
-    width: 22%;
-    font-size: 12px;
-    padding: 0px 12px;
+      width: 22%;
+      font-size: 12px;
+      padding: 0px 12px;
    }
-   .myImgCarouselcol{
+
+   .myImgCarouselcol {
       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-top: 1rem;
-     }
- }
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+   }
+}
+
 //  Medium devices (tablets) */
- @media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
    .mycreatingcol h1 {
       font-size: 5em;
-    letter-spacing: 0;
-    margin-top: 2rem;
+      letter-spacing: 0;
+      margin-top: 2rem;
    }
+
    .mycreatingcol h2 {
       font-size: 5em;
       margin-bottom: 35px;
-      margin-right: 0rem;
+      margin-right: 17rem;
       margin-top: -1.5rem;
       letter-spacing: -1px;
    }
+
    .mycreatingcol p {
       width: 49%;
-      top: 64%;
+      top: 58%;
+      left: 17%;
    }
+
    .search {
       width: 67%;
-  }
+   }
+
+}
+
+/* Large devices (laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+   .mycreatingcol h1 {
+      font-size: 5em;
+      letter-spacing: 0;
+      margin-top: 2rem;
+   }
+
+   .mycreatingcol h2 {
+      font-size: 5em;
+      margin-bottom: 35px;
+      margin-right: 12rem;
+      margin-top: -1.5rem;
+      letter-spacing: -1px;
+   }
+
+   .mycreating p {
+      color: #fff;
+      width: 35%;
+      text-align: right;
+      position: absolute;
+      top: 57%;
+      left: 16%;
+   }
+
+   .search {
+      width: 70%;
+   }
+}
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
    
- }
+}
