@@ -98,13 +98,13 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {isArabic ? (
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/mvp" style={headerStyle} onClick={changeLang('ar')}>
+                <Link className="nav-link" aria-current="page"  style={headerStyle} onClick={changeLang('ar')}>
                   AR
                 </Link>
               </li>
               ) : (
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/mvp" style={headerStyle} onClick={changeLang('en')}>
+                <Link className="nav-link" aria-current="page"  style={headerStyle} onClick={changeLang('en')}>
                   EN
                 </Link>
               </li>

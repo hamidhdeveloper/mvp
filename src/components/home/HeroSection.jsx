@@ -6,9 +6,16 @@ import { useTranslation  } from "react-i18next";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const currentdir = localStorage.getItem("dir");
+  
+    
   return (
     <>
-      <div className="container-fluid heroSecction vh-100 d-flex align-items-top">
+      <div className="container-fluid heroSecction vh-100 d-flex align-items-top" style={
+            currentdir === "rtl"
+              ? { direction: "ltr"}
+              : {}
+          }>
         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -18,7 +25,11 @@ const HeroSection = () => {
                 alt="Slide 1"
               />
               <div class="carousel-caption  d-none d-md-block mycarousel1">
-                <h6>{t('ARTIFICIAL INTELLIGENCE')}</h6>
+                <h6 style={
+            currentdir === "rtl"
+              ? { textAlign: "right", width: '26%'}
+              : {}
+          }>{t('ARTIFICIAL INTELLIGENCE')}</h6>
                 <h1>{t('Endless')}</h1>
                 <h1>{t('Possibilities')}</h1>
               </div>
