@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "../../images/logo.png";
 import { useLocation } from 'react-router-dom';
+import { useTranslation  } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
   const location = useLocation();
   const headerStyle = {
     color: location.pathname === '/startcreating' ? 'white' : location.pathname === '/order' ? 'white' : '',
@@ -45,7 +47,7 @@ const Header = () => {
               {location.pathname !== '/mvp' && location.pathname !== '/mvp/' &&  (
               <li className="nav-item d-none d-md-block">
                 <a className="nav-link active" aria-current="page" href="/mvp" style={headerStyle}>
-                  How its works
+                {t('How its works')}
                 </a>
               </li>
               )}
@@ -57,7 +59,7 @@ const Header = () => {
                 aria-controls="offcanvasRight"
                 style={headerStyle}
               >
-                Menu
+                {t('MENU')}
               </button>
               
             </ul>
@@ -88,10 +90,10 @@ const Header = () => {
             <ul className="list-group">
              <Link to="/startcreating">
               <li className={`list-group-item ${location.pathname === '/startcreating' ? 'myactive' : ''}`} aria-current="true">
-              Start Creating
+              {t('Start Creating')}
               </li>
               </Link>
-              <Link to="/retry"><li className={`list-group-item ${location.pathname === '/retry' ? 'myactive' : ''}`}>Retry</li></Link>
+              <Link to="/retry"><li className={`list-group-item ${location.pathname === '/retry' ? 'myactive' : ''}`}>{t('Retry')}</li></Link>
               <Link to="/goodjob"><li className={`list-group-item ${location.pathname === '/goodjob' ? 'myactive' : ''}`}>Good Job</li></Link>
               <Link to="/canvasprinting"><li className={`list-group-item ${location.pathname === '/canvasprinting' ? 'myactive' : ''}`}>Canvas Printing</li></Link>
               <Link to="/order"><li className={`list-group-item ${location.pathname === '/order' ? 'myactive' : ''}`}>Order Detail</li></Link>
