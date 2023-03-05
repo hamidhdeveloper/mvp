@@ -7,31 +7,41 @@ import retry2 from "../../../images/ret2img.png";
 import retry3 from "../../../images/ret3img.png";
 import retry4 from "../../../images/ret4img.png";
 import { Link,useLocation } from "react-router-dom";
+import { useTranslation  } from "react-i18next";
 
 const Retry = () => {
+  const { t } = useTranslation();
   const location = useLocation();
+  const currentdir = localStorage.getItem("dir");
+  
+
   if(location.pathname === '/retry') {
     document.body.style.overflow = 'auto';
+    document.body.style.paddingRight= '0px';
   }
   return (
     <>
-      <div className="container-fulid retry-main-container">
+      <div className="container-fulid retry-main-container" id="retry-main-container" style={
+            currentdir === "rtl"
+              ? { direction: "ltr" }
+              : {}
+          }>
         <div className="row retry-container">
           <div className="col-md-7 retry-left">
-            <h1>Retry?</h1>
+            <h1>{t('Retry?')}</h1>
             <p>
-              Don’t worry.
-              <br /> Change your words and make again.
+            {t('Don’t worry')}
+              <br /> {t('Change your words and make again.')}
             </p>
             <div className="retry-input-container">
               <input
                 className="retryinput"
                 type="text"
-                placeholder="flying car in space..."
+                placeholder={t('flying car in space...')}
                 name="search"
               />
               <Link to='/canvasprinting'>
-              <button className="retrycreate">Create Image</button>
+              <button className="retrycreate">{t('Create Image')}</button>
               </Link>
             </div>
           </div>
@@ -49,7 +59,7 @@ const Retry = () => {
             </div>
             <div className="reimg-button-container">
               
-              <Link to="/canvasprinting">Better with frame
+              <Link to="/canvasprinting">{t('Better with frame')}
               <img src={retryArrow} alt="retry arrow" className="img-fluid" />
               </Link>
             </div>

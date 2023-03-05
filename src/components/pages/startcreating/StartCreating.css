@@ -20,18 +20,18 @@
 .mycreatingcol h1 {
   font-weight: bolder;
   color: #fff;
-  font-size: 10em;
+  font-size: 8em;
   margin-top: 20px;
-  letter-spacing: -14px;
+  letter-spacing: -2px;
 }
 
 .mycreatingcol h2 {
   font-weight: bolder;
   color: #fff;
-  font-size: 10em;
+  font-size: 8em;
   margin-top: -4.5rem;
   margin-right: 19rem;
-  letter-spacing: -14px;
+  letter-spacing: -2px;
   margin-bottom: -2px;
 }
 
@@ -40,8 +40,8 @@
   width: 28%;
   text-align: right;
   position: absolute;
-  top: 70%;
-  left: 24%;
+  top: 68%;
+  left: 23%;
 }
 
 .search {

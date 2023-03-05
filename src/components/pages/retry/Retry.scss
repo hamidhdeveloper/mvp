@@ -1,6 +1,9 @@
 .retry-main-container {
     padding: 0px;
     overflow: hidden;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .retry-container {
@@ -21,9 +24,9 @@
 .retry-left h1 {
     font-weight: bolder;
     color: #fff;
-    font-size: 10em;
+    font-size: 8em;
     margin-right: 25px;
-    letter-spacing: -14px;
+    letter-spacing: -2px;
 }
 
 .retry-left p {
@@ -132,7 +135,7 @@
         color: white;
     }
     .retry-left h1 {
-            font-size: 4em;
+            font-size: 3em;
             margin-top: 1rem;
         letter-spacing: -2px;
     }

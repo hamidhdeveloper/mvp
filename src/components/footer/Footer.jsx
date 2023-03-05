@@ -3,16 +3,17 @@ import "./Footer.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { useLocation } from 'react-router-dom';
 import logo from "../../images/logo.png";
+import { useTranslation  } from "react-i18next";
 
 const Footer = () => {
-  
+  const { t } = useTranslation();
   const location = useLocation();
   const footerStyle = {
     background: location.pathname === '/retry' ? 'white' : location.pathname === '/canvasprinting' ? 'white' : location.pathname === '/order' ? 'white' : '',
   };
   return (
     <>
-      <footer className="footer fixed-bottom" style={footerStyle}>
+      <footer className="footer fixed-bottom" style={footerStyle} id='footer'>
         <div className="container-fulid">
           <div className="row">
             <div className="col-md-7">
@@ -20,7 +21,7 @@ const Footer = () => {
               <img src={logo} alt="logo" className="footerlogo"/>
               )}
               <div className="footer-copyright text-lg-end text-md-center text-sm-center">
-                <span>2023 © MyBrand. All rights reserved.</span>
+                <span>2023 © {t('MyBrand. All rights reserved.')}</span>
               </div>
             </div>
             <div className="col-md-5">

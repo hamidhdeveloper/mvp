@@ -7,7 +7,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow:auto;
   }
-
+  
   /* scroll bar  */
   ::-webkit-scrollbar {
     width: 10px;  /* width of the entire scrollbar */

@@ -2,8 +2,10 @@ import React from "react";
 import slide1 from "../../images/slide1.png";
 import slide2 from "../../images/slide2.png";
 import "./HeroSection.scss";
+import { useTranslation  } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="container-fluid heroSecction vh-100 d-flex align-items-top">
@@ -16,9 +18,9 @@ const HeroSection = () => {
                 alt="Slide 1"
               />
               <div class="carousel-caption  d-none d-md-block mycarousel1">
-                <h6>ARTIFICIAL INTELLIGENCE</h6>
-                <h1>Endless</h1>
-                <h1>Possibilities</h1>
+                <h6>{t('ARTIFICIAL INTELLIGENCE')}</h6>
+                <h1>{t('Endless')}</h1>
+                <h1>{t('Possibilities')}</h1>
               </div>
             </div>
             <div className="carousel-item">
@@ -28,10 +30,10 @@ const HeroSection = () => {
                 alt="Slide 2"
               />
               <div class="carousel-caption d-none d-md-block mycarousel">
-                <h6>INTO THE REALITY</h6>
-                <h1>Make</h1>
-                <h1>your Art</h1>
-                <h1>Works</h1>
+                <h6>{t('INTO THE REALITY')}</h6>
+                <h1>{t('Make')}</h1>
+                <h1>{t('your Art')}</h1>
+                <h1>{t('Works')}</h1>
               </div>
             </div>
           </div>
