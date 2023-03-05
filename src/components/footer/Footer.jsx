@@ -8,7 +8,7 @@ const Footer = () => {
   
   const location = useLocation();
   const footerStyle = {
-    background: location.pathname === '/retry' ? 'white' : location.pathname === '/canvasprinting' ? 'white' : '',
+    background: location.pathname === '/retry' ? 'white' : location.pathname === '/canvasprinting' ? 'white' : location.pathname === '/order' ? 'white' : '',
   };
   return (
     <>
