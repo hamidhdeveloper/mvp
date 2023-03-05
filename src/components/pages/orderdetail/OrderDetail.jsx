@@ -1,9 +1,13 @@
 import React from "react";
 import "./OrderDetail.scss";
 import orderimg from "../../../images/carimg.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const OrderDetail = () => {
+  const location = useLocation();
+  if(location.pathname === '/order') {
+    document.body.style.overflow = 'auto';
+  }
   return (
     <>
       <div className="container-fulid ordermaincontainer">

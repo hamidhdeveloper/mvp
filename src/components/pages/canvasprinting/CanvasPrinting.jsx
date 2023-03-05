@@ -1,8 +1,13 @@
 import React from "react";
 import "./CanvasPrinting.scss";
 import leftarrow from "../../../images/leftarrow.png";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
+
 const CanvasPrinting = () => {
+  const location = useLocation();
+  if(location.pathname === '/canvasprinting') {
+    document.body.style.overflow = 'auto';
+  }
   return (
     <>
       <div className="container-fulid canvasprintingcontainer">

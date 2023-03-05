@@ -6,9 +6,13 @@ import retry1 from "../../../images/ret1img.png";
 import retry2 from "../../../images/ret2img.png";
 import retry3 from "../../../images/ret3img.png";
 import retry4 from "../../../images/ret4img.png";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const Retry = () => {
+  const location = useLocation();
+  if(location.pathname === '/retry') {
+    document.body.style.overflow = 'auto';
+  }
   return (
     <>
       <div className="container-fulid retry-main-container">
