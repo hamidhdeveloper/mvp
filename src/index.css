@@ -24,3 +24,7 @@ body {
   }
   
   /* scroll bar end */
+
+  .App{
+    overflow: auto;
+  }
