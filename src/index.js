@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import store from './store/index'
+import { Provider } from 'react-redux'
 
-import i18n from "i18next";
+
+
 // import { useTranslation, initReactI18next } from "react-i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import tEN from './locales/en/transaltion.json'
 import tAR from './locales/ar/transaltion.json'
+
 
 
 i18n
@@ -34,12 +39,12 @@ i18n
 
 
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Provider store={store}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </Provider>
 );
 

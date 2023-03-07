@@ -1,0 +1,114 @@
+.goodjobmaincontainer {
+  padding: 0px;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("../../../images/goodjob-bg.png");
+  background-size: cover;
+}
+
+.goodjobsection {
+  display: flex;
+  justify-content: center;
+}
+
+.goodjobsection-left {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.goodjobsection-right {
+  height: 100vh vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 60px;
+}
+
+.goodjobsection-right h1 {
+  font-size: 6em;
+  text-align: right;
+  font-weight: 900;
+  color: #463D3D;
+  line-height: 76px;
+  letter-spacing: -6px;
+}
+
+.goodjobsection-right p {
+  text-align: right;
+}
+
+.good-button-container {
+  height: 40px;
+  width: 63%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.good-button-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.good-button-container img {
+  height: 27px;
+  margin-left: 7px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 319px) {
+  .menubutton {
+    color: #463D3D;
+  }
+  .goodjobsection-right {
+    padding-right: 43px;
+    padding-left: 27px;
+  }
+  .goodjobsection-right h1 {
+    font-size: 4em;
+    line-height: 52px;
+    margin-top: 70px;
+  }
+  .good-button-container a {
+    margin-top: 42px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .menubutton {
+    color: #463D3D;
+  }
+  .goodjobsection-right {
+    padding-right: 43px;
+    padding-left: 27px;
+  }
+  .goodjobsection-right h1 {
+    font-size: 4em;
+    line-height: 52px;
+    margin-top: 70px;
+  }
+  .good-button-container a {
+    margin-top: 42px !important;
+  }
+}
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menubutton {
+    color: #463D3D;
+  }
+  .goodjobsection-right {
+    padding-right: 43px;
+    padding-left: 27px;
+  }
+  .goodjobsection-right h1 {
+    font-size: 4em;
+    line-height: 52px;
+    margin-top: 70px;
+  }
+  .good-button-container a {
+    margin-top: 42px !important;
+  }
+}/*# sourceMappingURL=GoodJob.css.map */

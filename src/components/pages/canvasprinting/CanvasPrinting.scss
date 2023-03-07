@@ -10,6 +10,7 @@
 }
 
 .canvasprinting-left {
+    position: relative;
     display: flex;
     height: 100vh;
     background-image: url('../../../images/canvas-printing.png');
@@ -21,8 +22,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.canvasprinting-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.267); /* adjust the color and opacity as needed */
+  }
 
 .canvasprinting-left h1 {
+    z-index: 99;
     font-size: 6em;
     text-align: right;
     font-weight: 900;
@@ -33,6 +44,7 @@
 }
 
 .canvasprinting-left p {
+    z-index: 99;
     text-align: right;
     color: #ffffff;
 }
