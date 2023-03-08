@@ -14,7 +14,7 @@ const gerenatedImagesSlice = createSlice({
 
     }
 })
-// console.log(gerenatedImagesSlice.actions)
+// console.log(gerenatedImagesSlice.actions.selectedFrameImage())
 
 export default gerenatedImagesSlice.reducer
 export const {geneatedImages,selectedFrameImage} = gerenatedImagesSlice.actions

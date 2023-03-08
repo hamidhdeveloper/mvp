@@ -54,12 +54,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     padding-right: 129px;
 }
 
 .canvasprinting-right h1 {
     font-size: 1.4em;
+    font-weight: 700;
 }
 
 .canvasprinting-right p {
@@ -95,6 +96,28 @@
         }
     }
 }
+.Paynow-container{
+
+}
+.Paynow-container a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    background: black;
+    border-radius: 63px;
+    padding: 6px 24px;
+}
+.Paynow-container a:hover{
+    border: 1px solid black;
+    color: rgb(6, 6, 6);
+    background: rgb(255, 255, 255);
+}
+.followbtn:hover{
+    background: black;
+    color: white !important;
+}
+
+
 
 // extra small
 @media only screen and (min-width: 280px) and (max-width: 319px) {

@@ -35,7 +35,7 @@ const StartCreating = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${"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"}`,
+            Authorization: `Bearer ${"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"}`,
           },
         }
       );

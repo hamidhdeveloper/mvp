@@ -24,7 +24,7 @@ const Retry = () => {
 
   const handleImageClick = (imageUrl) => {
     setClickedImage(imageUrl);
-    console.log(imageUrl);
+    // console.log(imageUrl);
   }
 
   // for loading
@@ -54,7 +54,7 @@ const Retry = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${"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"}`,
+            Authorization: `Bearer ${"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"}`,
           },
         }
       );
