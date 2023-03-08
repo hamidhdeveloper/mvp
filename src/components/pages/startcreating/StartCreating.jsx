@@ -35,7 +35,7 @@ const StartCreating = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${"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"}`,
+            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
           },
         }
       );
